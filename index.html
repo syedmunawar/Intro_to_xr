@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <title>Steam Engine</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+      model-viewer {
+    height: 80%;
+    width: 100%;
+  }
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Steam Engine</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </nav>
+    </div>
+  </header>
+
+    <model-viewer src="scene.gltf" auto-rotate
+    camera-controls
+    autoplay
+    shadow-intensity="1"
+    alt="Steam Engine"
+    background-color="#70BCD1">
+
+</model-viewer>
+<a href="intent://arvr.google.com/scene-viewer/1.0?file=scene.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">AR</a>
+
+
+
+  <footer class="mt-auto text-white-50">
+    <p>Website for course <a href="https://nmis.litmos.com" class="text-white">Introduction to XR</a>, by <a href="linkedin" class="text-white">Awais Munawar</a>.</p>
+  </footer>
+</div>
+
+    
+  </body>
+</html>
