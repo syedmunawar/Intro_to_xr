@@ -23,7 +23,10 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+      model-viewer{
+        height: 100%;
+        width: 100%;
+      }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -40,21 +43,19 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-
+      <h3 class="float-md-start mb-0">Allosaurus</h3>
     </div>
   </header>
 
-  <main class="px-3">
-    <!-- Use it like any other HTML element -->
-<model-viewer src="scene.gltf" alt="Allosaurus" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
-   <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+  <main style="height: 515px;width: 853px; align-self: center;">
+    <model-viewer src="scene.gltf" alt="Allosaurus" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+     <p class="lead">
+      <a href="intent://arvr.google.com/scene-viewer/1.0?file=scene.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;" class="btn btn-lg btn-secondary fw-bold border-white bg-white">View in AR</a>
     </p>
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">Awais Munawar</a>.</p>
   </footer>
 </div>
 
