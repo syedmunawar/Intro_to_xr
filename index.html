@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-    <title>Steam Engine</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
     
@@ -16,13 +16,19 @@
 <link href="bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-      model-viewer {
-    height: 80%;
-    width: 100%;
-  }
-
-
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
     </style>
 
     
@@ -31,17 +37,27 @@
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Cover</h3>
 
+    </div>
+  </header>
 
-<div class="sketchfab-embed-wrapper"> <iframe title="Victorian Steam Engine, Airdrie Cotton Works" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1000" height="800" src="https://sketchfab.com/models/cb8de856b2284fa994c224a79378605b/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/victorian-steam-engine-airdrie-cotton-works-cb8de856b2284fa994c224a79378605b?utm_medium=embed&utm_campaign=share-popup&utm_content=cb8de856b2284fa994c224a79378605b" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Victorian Steam Engine, Airdrie Cotton Works </a> by <a href="https://sketchfab.com/NMIS-Digital?utm_medium=embed&utm_campaign=share-popup&utm_content=cb8de856b2284fa994c224a79378605b" target="_blank" style="font-weight: bold; color: #1CAAD9;"> NMIS-Digital </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=cb8de856b2284fa994c224a79378605b" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
-<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://syedmunawar.github.io/Intro_to_xr/scene.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">AR</a>
-
-
+  <main class="px-3">
+    <!-- Use it like any other HTML element -->
+<model-viewer src="scene.gltf" alt="Allosaurus" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
+   <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+  </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Website for course <a href="https://nmis.litmos.com" class="text-white">Introduction to XR</a>, by <a href="linkedin" class="text-white">Awais Munawar</a>.</p>
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
   </footer>
 </div>
+
 
     
   </body>
